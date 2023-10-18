@@ -1,4 +1,5 @@
 package com.moosh.RaidOrganizer.domain.model;
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
@@ -22,9 +23,12 @@ public class User {
     private String email;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<Raid> raid;
+    private List<Raid> raid = new ArrayList<>();
     
     
+    public User() {
+        this.raid = new ArrayList<>();
+    }
     public Long getUserID() {
         return userID;
     }
