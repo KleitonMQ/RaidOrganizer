@@ -5,6 +5,7 @@ classDiagram
   class User {
     +userID: int
     +name: string
+    +email: string
     +raid: Raid[]
   }
 
