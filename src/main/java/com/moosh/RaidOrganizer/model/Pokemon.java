@@ -1,5 +1,6 @@
 package com.moosh.RaidOrganizer.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
@@ -7,8 +8,10 @@ import jakarta.persistence.Id;
 public class Pokemon {
     
     @Id
+    @Column(unique = true)
     private int dexNumber;
     
+    @Column(unique = true)
     private String pokemonName;
     
     private String pokemonPNG;
