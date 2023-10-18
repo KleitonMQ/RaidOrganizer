@@ -1,5 +1,6 @@
-package com.moosh.RaidOrganizer.model;
+package com.moosh.RaidOrganizer.domain.model;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,7 +15,7 @@ public class Raid {
     private int id;
     private int star;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Pokemon pokemon;
     
     private boolean megaRaid;
@@ -56,7 +57,5 @@ public class Raid {
     }
     public void setDoneTimes(int doneTimes) {
         this.doneTimes = doneTimes;
-    }
-
-    
+    }    
 }

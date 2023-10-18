@@ -19,6 +19,7 @@ classDiagram
   }
 
   class Pokemon {
+    +id: int
     +dexNumber: int
     +pokemonName: string
     +pokemonPNG: string

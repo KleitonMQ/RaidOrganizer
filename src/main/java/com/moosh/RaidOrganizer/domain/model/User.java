@@ -1,7 +1,8 @@
-package com.moosh.RaidOrganizer.model;
+package com.moosh.RaidOrganizer.domain.model;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -16,6 +17,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userID;
     private String name;
+
+    @Column (unique = true)
     private String email;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
@@ -46,5 +49,4 @@ public class User {
     public void setRaid(List<Raid> raid) {
         this.raid = raid;
     }
-    
 }

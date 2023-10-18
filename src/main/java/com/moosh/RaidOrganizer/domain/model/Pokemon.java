@@ -1,17 +1,19 @@
-package com.moosh.RaidOrganizer.model;
+package com.moosh.RaidOrganizer.domain.model;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity(name = "tb_pokemon")
 public class Pokemon {
     
     @Id
-    @Column(unique = true)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private int dexNumber;
     
-    @Column(unique = true)
     private String pokemonName;
     
     private String pokemonPNG;
@@ -35,6 +37,4 @@ public class Pokemon {
     public void setPokemonPNG(String pokemonPNG) {
         this.pokemonPNG = pokemonPNG;
     }
-
-
 }
