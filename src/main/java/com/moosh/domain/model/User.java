@@ -1,4 +1,4 @@
-package com.moosh.RaidOrganizer.domain.model;
+package com.moosh.domain.model;
 import java.util.ArrayList;
 import java.util.List;
 

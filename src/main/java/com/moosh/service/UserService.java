@@ -1,6 +1,6 @@
-package com.moosh.RaidOrganizer.service;
+package com.moosh.service;
 
-import com.moosh.RaidOrganizer.domain.model.User;
+import com.moosh.domain.model.User;
 
 public interface UserService {
     User findByID(Long id);

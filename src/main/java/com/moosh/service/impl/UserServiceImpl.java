@@ -1,12 +1,12 @@
-package com.moosh.RaidOrganizer.service.impl;
+package com.moosh.service.impl;
 
 import java.util.NoSuchElementException;
 
 import org.springframework.stereotype.Service;
 
-import com.moosh.RaidOrganizer.domain.model.User;
-import com.moosh.RaidOrganizer.domain.repository.UserRepository;
-import com.moosh.RaidOrganizer.service.UserService;
+import com.moosh.domain.model.User;
+import com.moosh.domain.repository.UserRepository;
+import com.moosh.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {

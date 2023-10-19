@@ -1,4 +1,4 @@
-package com.moosh.RaidOrganizer.controller.exception;
+package com.moosh.controller.exception;
 
 import java.util.NoSuchElementException;
 

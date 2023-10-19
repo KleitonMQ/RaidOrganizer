@@ -1,4 +1,4 @@
-package com.moosh.RaidOrganizer.domain.model;
+package com.moosh.domain.model;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;

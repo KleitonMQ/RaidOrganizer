@@ -1,4 +1,4 @@
-package com.moosh.RaidOrganizer.controller;
+package com.moosh.controller;
 
 import java.net.URI;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.moosh.RaidOrganizer.domain.model.User;
-import com.moosh.RaidOrganizer.service.UserService;
+import com.moosh.domain.model.User;
+import com.moosh.service.UserService;
 
 @RestController
 @RequestMapping("/users")
