@@ -9,5 +9,4 @@ public class RaidOrganizerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RaidOrganizerApplication.class, args);
 	}
-
 }

@@ -28,7 +28,7 @@ dependencies {
 }
 tasks.jar {
 	manifest {
-		attributes["Main-Class"] = "src.main.java.com.moosh.RaidOrganizer.RaidOrganizerApplication.java"
+		attributes["Main-Class"] = "java.com.moosh.RaidOrganizer.RaidOrganizerApplication"
 	}
 }
 
