@@ -1,5 +1,7 @@
 package com.moosh.RaidOrganizer.service;
 
+
+import com.moosh.RaidOrganizer.domain.model.Raid;
 import com.moosh.RaidOrganizer.domain.model.User;
 
 public interface UserService {
@@ -7,5 +9,5 @@ public interface UserService {
 
     User create(User userToCreate);
 
-    
+    User addRaidByEmail(String email, Raid raid);
 }
